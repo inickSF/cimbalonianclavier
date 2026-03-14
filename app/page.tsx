@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { AnimatedHeadline } from "../components/animated-headline";
 import { Reveal } from "../components/reveal";
 import heroKeyboard from "../Images/full_keybord_front.png";
 
@@ -42,7 +43,7 @@ export default function HomePage() {
           </div>
           <div className="hero-center">
             <p className="eyebrow">Early Keyboard Instrument Rental</p>
-            <h1>Historically informed instruments, handled with modern calm.</h1>
+            <AnimatedHeadline text="Historically informed instruments, handled with modern calm." />
             <p className="lead">
               Cimbalonian Clavier provides harpsichord and fortepiano rental for festivals,
               recordings, concerts, and private salons, with Greece at the centre of its service.
@@ -82,7 +83,7 @@ export default function HomePage() {
 
       <section className="media-band">
         {instrumentCards.map((card, index) => (
-          <Reveal key={card.title} delay={index * 120}>
+          <Reveal key={card.title} delay={index * 120} className="reveal-lift">
             <article className="media-card">
               <div className="media-card-image">
                 <Image
@@ -102,7 +103,7 @@ export default function HomePage() {
         ))}
       </section>
 
-      <Reveal>
+      <Reveal className="reveal-soft">
         <section className="statement-section">
           <div className="statement-copy">
             <p className="eyebrow">Regional Service</p>
