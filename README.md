@@ -20,3 +20,4 @@ A refined dark Next.js website for `cimbalonianclavier.com`, prepared for Vercel
 1. Import the project into Vercel.
 2. Keep the framework preset as `Next.js`.
 3. Deploy with the default build command: `next build`.
+# cimbalonianclavier
