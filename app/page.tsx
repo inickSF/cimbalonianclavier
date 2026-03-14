@@ -3,9 +3,9 @@ import Link from "next/link";
 import heroKeyboard from "../Images/full_keybord_front.png";
 
 const highlights = [
-  "Concert-ready rental instruments with discreet on-site presence",
-  "Historic atmosphere for villas, festivals, and cultural programmes",
-  "Tailored recommendations for chamber music, continuo, and recital settings"
+  "From the first phone call, we plan repertoire, venue access, timing, and the right instrument for the occasion.",
+  "We coordinate transport, delivery, setup, and on-site readiness with quiet attention to every practical detail.",
+  "From arrival to the first measure of the concert, the instrument is prepared to feel natural, elegant, and assured."
 ];
 
 export default function HomePage() {
@@ -73,8 +73,8 @@ export default function HomePage() {
 
       <section className="ornament-card">
         <div className="section-heading">
-          <p className="eyebrow">A cultivated repertoire of occasions</p>
-          <h2>For performances that ask for texture, character, and grace.</h2>
+          <p className="eyebrow">What We Primarily Do</p>
+          <h2>We take care of the logistics from the first call to the first measure.</h2>
         </div>
         <div className="feature-grid">
           {highlights.map((item) => (
