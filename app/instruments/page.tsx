@@ -10,14 +10,9 @@ const instruments = [
       "Brilliant and immediate in character, ideal for chamber repertoire and intimate historic interiors."
   },
   {
-    name: "Spinet for Salon Performance",
+    name: "Concert Fortepiano",
     detail:
-      "A graceful footprint for private residences, receptions, and educational presentations."
-  },
-  {
-    name: "Clavichord for Study and Display",
-    detail:
-      "Quietly expressive, well suited to residency work, demonstration, and historically informed study."
+      "Warm and articulate in tone, suited to salon repertoire, recital settings, and cultivated private events."
   }
 ];
 

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, EB_Garamond } from "next/font/google";
+import { Cormorant_Garamond, Manrope } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
@@ -9,10 +9,10 @@ const cormorant = Cormorant_Garamond({
   weight: ["400", "500", "600", "700"]
 });
 
-const ebGaramond = EB_Garamond({
+const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-body",
-  weight: ["400", "500", "600"]
+  weight: ["400", "500", "600", "700"]
 });
 
 const navigation = [
@@ -47,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${ebGaramond.variable}`}>
+    <html lang="en" className={`${cormorant.variable} ${manrope.variable}`}>
       <body>
         <div className="site-shell">
           <header className="site-header">
