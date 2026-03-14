@@ -29,11 +29,11 @@ export const metadata: Metadata = {
     template: "%s | Cimbalonian Clavier"
   },
   description:
-    "Elegant early keyboard instrument rental across Greece and Southern Europe, offering harpsichords, spinets, clavichords, and refined support for concerts, festivals, and private residences.",
+    "Elegant early keyboard instrument rental based primarily in Greece, offering harpsichord and fortepiano service for concerts, festivals, recordings, and private residences across Southern Europe.",
   openGraph: {
     title: "Cimbalonian Clavier",
     description:
-      "Early keyboard instrument rental across Greece, Italy, Bulgaria, Hungary, Austria, Germany, and France, with a dark classical presentation and refined service for performances, recordings, and cultural events.",
+      "Harpsichord and fortepiano rental based primarily in Greece, with selected service across Italy, Bulgaria, Hungary, Austria, Germany, and France for performances, recordings, and cultural events.",
     url: "https://cimbalonianclavier.com",
     siteName: "Cimbalonian Clavier",
     locale: "en_GB",

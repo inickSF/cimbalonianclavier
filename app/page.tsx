@@ -26,9 +26,9 @@ export default function HomePage() {
           <p className="eyebrow">Early Keyboard Instrument Rental in Greece & Southern Europe</p>
           <h1>An elegant classical presence for refined performances.</h1>
           <p className="lead">
-            Cimbalonian Clavier brings harpsichords, spinets, and clavichords to venues across
-            Greece, Italy, Bulgaria, Hungary, Austria, Germany, and France with a calm, luxurious
-            service shaped for festivals, recordings, and intimate salons.
+            Based primarily in Greece, Cimbalonian Clavier offers harpsichord and fortepiano rental
+            for festivals, recordings, private salons, and concert settings, with selected service
+            across Italy, Bulgaria, Hungary, Austria, Germany, and France.
           </p>
           <div className="hero-instrument-strip">
             <article className="hero-instrument-card">
