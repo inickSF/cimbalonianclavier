@@ -184,7 +184,7 @@ h2,
 }
 
 .hero-content {
-  max-width: 48rem;
+  max-width: 56rem;
 }
 
 .hero-scene {
@@ -221,9 +221,9 @@ h2,
 
 h1 {
   margin: 0;
-  max-width: 11ch;
-  font-size: clamp(3rem, 9vw, 6rem);
-  line-height: 0.96;
+  max-width: 10ch;
+  font-size: clamp(2.5rem, 7.1vw, 4.9rem);
+  line-height: 1;
   font-weight: 600;
 }
 
@@ -246,8 +246,10 @@ h2 {
 }
 
 .lead {
-  max-width: 42rem;
-  margin: 1.5rem 0 0;
+  max-width: 50rem;
+  margin: 1.35rem 0 0;
+  font-size: clamp(1.18rem, 2vw, 1.5rem);
+  line-height: 1.72;
 }
 
 .hero-actions {
