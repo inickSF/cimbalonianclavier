@@ -4,6 +4,7 @@ import { AnimatedHeadline } from "../components/animated-headline";
 import { Reveal } from "../components/reveal";
 import fortepianoImage from "../Images/Fortepiano_full.png";
 import harpsichordImage from "../Images/Harpsichord_full.jpeg";
+import parthenonImage from "../Images/Parthenon_full.jpg";
 import heroKeyboard from "../Images/full_keybord_front.png";
 
 const servicePoints = [
@@ -118,6 +119,15 @@ export default function HomePage() {
       <Reveal className="reveal-panel reveal-soft">
         <section className="statement-section">
           <div className="statement-copy">
+            <div className="statement-copy-media" aria-hidden="true">
+              <Image
+                src={parthenonImage}
+                alt=""
+                fill
+                className="statement-copy-image"
+                sizes="(max-width: 980px) 100vw, 50vw"
+              />
+            </div>
             <p className="eyebrow">Regional Service</p>
             <h2>Greece first, with selected work across Italy, Bulgaria, Hungary, Austria, Germany, and France.</h2>
             <p className="statement-support">
