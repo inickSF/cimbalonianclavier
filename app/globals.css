@@ -283,11 +283,152 @@ h2 {
   overflow: hidden;
   border-radius: 0.9rem;
   border: 1px solid rgba(199, 168, 106, 0.15);
-  background: rgba(16, 14, 13, 0.88);
+  background:
+    radial-gradient(circle at top, rgba(199, 168, 106, 0.12), transparent 34%),
+    linear-gradient(180deg, rgba(18, 15, 13, 0.98), rgba(9, 8, 8, 0.95));
 }
 
-.hero-thumbnail {
-  object-fit: cover;
+.hero-placeholder {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 8%;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(199, 168, 106, 0.1);
+}
+
+.hero-placeholder::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 38%;
+  background:
+    linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.35)),
+    linear-gradient(90deg, rgba(199, 168, 106, 0.04), transparent 40%, rgba(199, 168, 106, 0.04));
+}
+
+.harpsichord-body,
+.fortepiano-body {
+  position: absolute;
+  background: linear-gradient(135deg, #7f5128, #3d2418 72%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 240, 214, 0.12),
+    0 16px 34px rgba(0, 0, 0, 0.35);
+}
+
+.harpsichord-lid,
+.fortepiano-lid {
+  position: absolute;
+  background: linear-gradient(135deg, rgba(185, 141, 84, 0.35), rgba(76, 45, 23, 0.16));
+}
+
+.harpsichord-keys,
+.fortepiano-keys {
+  position: absolute;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      #f2eadb 0 8%,
+      #1b1817 8% 11%,
+      #f2eadb 11% 19%,
+      #1b1817 19% 22%,
+      #f2eadb 22% 30%
+    );
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.harpsichord-leg,
+.fortepiano-leg {
+  position: absolute;
+  width: 0.6rem;
+  background: linear-gradient(180deg, #8a5a31, #2c1b13);
+  border-radius: 999px;
+  opacity: 0.85;
+}
+
+.hero-placeholder-harpsichord .harpsichord-body {
+  left: 14%;
+  right: 15%;
+  bottom: 28%;
+  height: 20%;
+  clip-path: polygon(0 0, 68% 0, 100% 100%, 0 100%);
+}
+
+.hero-placeholder-harpsichord .harpsichord-lid {
+  left: 20%;
+  right: 30%;
+  bottom: 48%;
+  height: 12%;
+  clip-path: polygon(0 100%, 86% 0, 100% 12%, 18% 100%);
+}
+
+.hero-placeholder-harpsichord .harpsichord-keys {
+  left: 20%;
+  width: 28%;
+  bottom: 30%;
+  height: 10%;
+  border-radius: 0.25rem;
+}
+
+.harpsichord-leg-left {
+  left: 23%;
+  bottom: 10%;
+  height: 18%;
+}
+
+.harpsichord-leg-right {
+  left: 69%;
+  bottom: 10%;
+  height: 18%;
+}
+
+.hero-placeholder-fortepiano .fortepiano-body {
+  left: 15%;
+  right: 14%;
+  bottom: 28%;
+  height: 22%;
+  border-radius: 0.4rem 2rem 0.6rem 0.6rem;
+  clip-path: polygon(0 0, 70% 0, 88% 18%, 100% 100%, 0 100%);
+}
+
+.hero-placeholder-fortepiano .fortepiano-lid {
+  left: 26%;
+  right: 22%;
+  bottom: 49%;
+  height: 13%;
+  clip-path: polygon(0 100%, 58% 10%, 90% 0, 100% 10%, 36% 100%);
+}
+
+.hero-placeholder-fortepiano .fortepiano-keys {
+  left: 23%;
+  width: 25%;
+  bottom: 31%;
+  height: 10%;
+  border-radius: 0.25rem;
+}
+
+.fortepiano-leg-left {
+  left: 24%;
+  bottom: 10%;
+  height: 18%;
+}
+
+.fortepiano-leg-center {
+  left: 50%;
+  bottom: 10%;
+  height: 18%;
+}
+
+.fortepiano-leg-right {
+  left: 77%;
+  bottom: 10%;
+  height: 18%;
 }
 
 .hero-instrument-meta p,

@@ -33,32 +33,33 @@ export default function HomePage() {
           <div className="hero-instrument-strip">
             <article className="hero-instrument-card">
               <div className="hero-instrument-image">
-                <Image
-                  src="/harpsichord-placeholder.svg"
-                  alt="Harpsichord placeholder"
-                  fill
-                  className="hero-thumbnail"
-                  sizes="(max-width: 900px) 100vw, 300px"
-                />
+                <div className="hero-placeholder hero-placeholder-harpsichord" aria-hidden="true">
+                  <span className="harpsichord-body" />
+                  <span className="harpsichord-lid" />
+                  <span className="harpsichord-keys" />
+                  <span className="harpsichord-leg harpsichord-leg-left" />
+                  <span className="harpsichord-leg harpsichord-leg-right" />
+                </div>
               </div>
               <div className="hero-instrument-meta">
                 <p>Harpsichord</p>
-                <span>Placeholder image until final photography</span>
+                <span>Elegant concert profile</span>
               </div>
             </article>
             <article className="hero-instrument-card">
               <div className="hero-instrument-image">
-                <Image
-                  src="/fortepiano-placeholder.svg"
-                  alt="Fortepiano placeholder"
-                  fill
-                  className="hero-thumbnail"
-                  sizes="(max-width: 900px) 100vw, 300px"
-                />
+                <div className="hero-placeholder hero-placeholder-fortepiano" aria-hidden="true">
+                  <span className="fortepiano-body" />
+                  <span className="fortepiano-lid" />
+                  <span className="fortepiano-keys" />
+                  <span className="fortepiano-leg fortepiano-leg-left" />
+                  <span className="fortepiano-leg fortepiano-leg-center" />
+                  <span className="fortepiano-leg fortepiano-leg-right" />
+                </div>
               </div>
               <div className="hero-instrument-meta">
                 <p>Fortepiano</p>
-                <span>Placeholder image until final photography</span>
+                <span>Refined salon character</span>
               </div>
             </article>
           </div>
