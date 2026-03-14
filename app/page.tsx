@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { AnimatedHeadline } from "../components/animated-headline";
 import { Reveal } from "../components/reveal";
+import fortepianoImage from "../Images/Fortepiano_full.png";
+import harpsichordImage from "../Images/Harpsichord_full.jpeg";
 import heroKeyboard from "../Images/full_keybord_front.png";
 
 const servicePoints = [
@@ -13,11 +15,15 @@ const servicePoints = [
 const instrumentCards = [
   {
     title: "Harpsichord",
-    copy: "For concert programmes, continuo work, recordings, and historic interiors."
+    copy: "For concert programmes, continuo work, recordings, and historic interiors.",
+    image: harpsichordImage,
+    imageClassName: "media-image media-image-harpsichord"
   },
   {
     title: "Fortepiano",
-    copy: "For salon recitals, intimate cultural events, and historically informed performance."
+    copy: "For salon recitals, intimate cultural events, and historically informed performance.",
+    image: fortepianoImage,
+    imageClassName: "media-image media-image-fortepiano"
   }
 ];
 
@@ -87,10 +93,10 @@ export default function HomePage() {
             <article className="media-card">
               <div className="media-card-image">
                 <Image
-                  src={heroKeyboard}
+                  src={card.image}
                   alt={card.title}
                   fill
-                  className={index === 0 ? "media-image" : "media-image media-image-alt"}
+                  className={card.imageClassName}
                   sizes="(max-width: 900px) 100vw, 50vw"
                 />
               </div>
@@ -110,7 +116,10 @@ export default function HomePage() {
             <h2>Greece first, with selected work across Italy, Bulgaria, Hungary, Austria, Germany, and France.</h2>
           </div>
           <div className="statement-quote">
-            <p>Quiet logistics. Refined presentation. Instruments ready for performance.</p>
+            <p>
+              <span className="ornate-word">Quiet</span> logistics. Refined presentation. Instruments
+              ready for performance.
+            </p>
           </div>
         </section>
       </Reveal>

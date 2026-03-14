@@ -402,8 +402,12 @@ h2 {
   filter: saturate(0.82) brightness(0.7);
 }
 
-.media-image-alt {
-  object-position: center 80%;
+.media-image-harpsichord {
+  object-position: center 44%;
+}
+
+.media-image-fortepiano {
+  object-position: center center;
 }
 
 .media-card-image::after {
@@ -457,6 +461,26 @@ h2 {
   font-family: var(--font-display), serif;
   font-size: clamp(1.55rem, 2.5vw, 2.6rem);
   line-height: 1.18;
+}
+
+.ornate-word {
+  position: relative;
+  display: inline-block;
+  margin-right: 0.12em;
+  padding-right: 0.08em;
+}
+
+.ornate-word::after {
+  content: "";
+  position: absolute;
+  left: 0.14em;
+  right: -0.02em;
+  bottom: 0.05em;
+  height: 0.07em;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(246, 240, 232, 0.9), rgba(246, 240, 232, 0.42));
+  transform: skewX(-22deg);
+  opacity: 0.8;
 }
 
 .reveal {
