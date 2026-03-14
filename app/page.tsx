@@ -10,11 +10,12 @@ export default function HomePage() {
   return (
     <div className="page">
       <section className="hero-panel">
-        <p className="eyebrow">Early Keyboard Instrument Rental in Corfu</p>
+        <p className="eyebrow">Early Keyboard Instrument Rental in Greece & Southern Europe</p>
         <h1>An elegant classical presence for refined performances.</h1>
         <p className="lead">
-          Cimbalonian Clavier brings harpsichords, spinets, and clavichords to venues across Corfu
-          with a calm, luxurious service shaped for festivals, recordings, and intimate salons.
+          Cimbalonian Clavier brings harpsichords, spinets, and clavichords to venues across Greece,
+          Italy, Bulgaria, Hungary, Austria, Germany, and France with a calm, luxurious service
+          shaped for festivals, recordings, and intimate salons.
         </p>
         <div className="hero-actions">
           <Link href="/instruments" className="button button-primary">
@@ -43,12 +44,12 @@ export default function HomePage() {
 
       <section className="split-section">
         <div className="split-copy">
-          <p className="eyebrow">Corfu Service</p>
+          <p className="eyebrow">Regional Service</p>
           <h2>Historic sound, handled with modern care.</h2>
           <p>
             Each engagement is arranged with attention to repertoire, access, humidity, staging,
-            and audience setting, so the instrument arrives with poise and leaves a lasting
-            impression.
+            cross-border logistics, and audience setting, so the instrument arrives with poise and
+            leaves a lasting impression.
           </p>
         </div>
         <div className="quote-card">

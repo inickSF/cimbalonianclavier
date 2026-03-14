@@ -6,7 +6,7 @@ export default function ContactPage() {
         <h1>Arrange an instrument with clarity and confidence.</h1>
         <p className="lead">
           Share your date, venue, programme, and preferred instrument. We can then advise on
-          suitability, availability, and logistics for Corfu-based delivery.
+          suitability, availability, and logistics for delivery across Greece and Southern Europe.
         </p>
       </section>
 
@@ -17,7 +17,7 @@ export default function ContactPage() {
         </article>
         <article className="contact-card">
           <h2>Location</h2>
-          <p>Corfu, Greece</p>
+          <p>Based in Greece, serving Southern Europe.</p>
         </article>
         <article className="contact-card">
           <h2>Typical Uses</h2>

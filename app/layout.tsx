@@ -29,11 +29,11 @@ export const metadata: Metadata = {
     template: "%s | Cimbalonian Clavier"
   },
   description:
-    "Elegant early keyboard instrument rental in Corfu, Greece, offering harpsichords, spinets, clavichords, and refined support for concerts, festivals, and private residences.",
+    "Elegant early keyboard instrument rental across Greece and Southern Europe, offering harpsichords, spinets, clavichords, and refined support for concerts, festivals, and private residences.",
   openGraph: {
     title: "Cimbalonian Clavier",
     description:
-      "Early keyboard instrument rental in Corfu, Greece, with a dark classical presentation and refined service for performances, recordings, and cultural events.",
+      "Early keyboard instrument rental across Greece, Italy, Bulgaria, Hungary, Austria, Germany, and France, with a dark classical presentation and refined service for performances, recordings, and cultural events.",
     url: "https://cimbalonianclavier.com",
     siteName: "Cimbalonian Clavier",
     locale: "en_GB",
@@ -55,7 +55,7 @@ export default function RootLayout({
               <span className="brand-mark">CC</span>
               <span>
                 <strong>Cimbalonian Clavier</strong>
-                <em>Corfu, Greece</em>
+                <em>Greece & Southern Europe</em>
               </span>
             </Link>
             <nav className="site-nav" aria-label="Primary navigation">
@@ -70,12 +70,12 @@ export default function RootLayout({
           <footer className="site-footer">
             <div>
               <p className="footer-title">Cimbalonian Clavier</p>
-              <p>Early keyboard instrument rental for Corfu concerts, recordings, and private salons.</p>
+              <p>Early keyboard instrument rental for concerts, recordings, festivals, and private salons across Southern Europe.</p>
             </div>
             <div>
               <p className="footer-title">Enquiries</p>
               <p>hello@cimbalonianclavier.com</p>
-              <p>Corfu, Ionian Islands, Greece</p>
+              <p>Based in Greece, serving Italy, Bulgaria, Hungary, Austria, Germany, and France.</p>
             </div>
           </footer>
         </div>

@@ -29,7 +29,7 @@ export default function InstrumentsPage() {
         <h1>Selected early keyboards for recital, continuo, and residence.</h1>
         <p className="lead">
           Availability can be tailored to programme type, venue scale, and the practical demands of
-          transport within Corfu.
+          transport throughout Greece and Southern Europe.
         </p>
       </section>
 
