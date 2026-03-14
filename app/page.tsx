@@ -10,20 +10,51 @@ export default function HomePage() {
   return (
     <div className="page">
       <section className="hero-panel">
-        <p className="eyebrow">Early Keyboard Instrument Rental in Greece & Southern Europe</p>
-        <h1>An elegant classical presence for refined performances.</h1>
-        <p className="lead">
-          Cimbalonian Clavier brings harpsichords, spinets, and clavichords to venues across Greece,
-          Italy, Bulgaria, Hungary, Austria, Germany, and France with a calm, luxurious service
-          shaped for festivals, recordings, and intimate salons.
-        </p>
-        <div className="hero-actions">
-          <Link href="/instruments" className="button button-primary">
-            View Instruments
-          </Link>
-          <Link href="/contact" className="button button-secondary">
-            Request Availability
-          </Link>
+        <div className="hero-scene" aria-hidden="true">
+          <div className="hero-wood hero-wood-top" />
+          <div className="hero-medallion">Cimbalonian Clavier</div>
+          <div className="hero-keys">
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+          </div>
+          <div className="hero-black-keys">
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+          </div>
+          <div className="hero-wood hero-wood-bottom" />
+        </div>
+        <div className="hero-content">
+          <p className="eyebrow">Early Keyboard Instrument Rental in Greece & Southern Europe</p>
+          <h1>An elegant classical presence for refined performances.</h1>
+          <p className="lead">
+            Cimbalonian Clavier brings harpsichords, spinets, and clavichords to venues across
+            Greece, Italy, Bulgaria, Hungary, Austria, Germany, and France with a calm, luxurious
+            service shaped for festivals, recordings, and intimate salons.
+          </p>
+          <div className="hero-actions">
+            <Link href="/instruments" className="button button-primary">
+              View Instruments
+            </Link>
+            <Link href="/contact" className="button button-secondary">
+              Request Availability
+            </Link>
+          </div>
         </div>
       </section>
 
