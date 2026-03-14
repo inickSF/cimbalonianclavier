@@ -337,12 +337,23 @@ h2 {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
   gap: 2rem;
+  min-height: calc(100vh - 7rem);
+  align-items: center;
 }
 
 .story-heading {
   display: grid;
   align-content: start;
   gap: 1rem;
+}
+
+.story-intro,
+.statement-support {
+  max-width: 34rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.5vw, 1.16rem);
+  line-height: 1.85;
 }
 
 .story-points {
@@ -389,11 +400,14 @@ h2 {
   border-radius: 1.75rem;
   background: rgba(255, 255, 255, 0.03);
   box-shadow: var(--shadow);
+  min-height: calc(100vh - 8.5rem);
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
 }
 
 .media-card-image {
   position: relative;
-  aspect-ratio: 1.35 / 1;
+  min-height: 0;
 }
 
 .media-image {
@@ -420,7 +434,7 @@ h2 {
 }
 
 .media-card-copy {
-  padding: 1.3rem 1.35rem 1.5rem;
+  padding: 1.5rem 1.5rem 1.7rem;
 }
 
 .media-card-title {
@@ -439,6 +453,8 @@ h2 {
   gap: 1rem;
   padding: 0;
   overflow: hidden;
+  min-height: calc(100vh - 7rem);
+  align-items: stretch;
 }
 
 .statement-copy,
@@ -463,34 +479,14 @@ h2 {
   line-height: 1.18;
 }
 
-.ornate-word {
-  position: relative;
-  display: inline-block;
-  margin-right: 0.12em;
-  padding-right: 0.08em;
-}
-
-.ornate-word::after {
-  content: "";
-  position: absolute;
-  left: 0.14em;
-  right: -0.02em;
-  bottom: 0.05em;
-  height: 0.07em;
-  border-radius: 999px;
-  background: linear-gradient(90deg, rgba(246, 240, 232, 0.9), rgba(246, 240, 232, 0.42));
-  transform: skewX(-22deg);
-  opacity: 0.8;
-}
-
 .reveal {
   opacity: 0;
-  transform: translateY(52px) scale(0.985);
+  transform: translateY(72px) scale(0.975);
   transition:
-    opacity 900ms cubic-bezier(0.2, 0.75, 0.2, 1),
-    transform 900ms cubic-bezier(0.2, 0.75, 0.2, 1),
-    filter 900ms cubic-bezier(0.2, 0.75, 0.2, 1);
-  filter: blur(10px);
+    opacity 1000ms cubic-bezier(0.2, 0.75, 0.2, 1),
+    transform 1000ms cubic-bezier(0.2, 0.75, 0.2, 1),
+    filter 1000ms cubic-bezier(0.2, 0.75, 0.2, 1);
+  filter: blur(14px);
 }
 
 .reveal.is-visible {
@@ -500,11 +496,15 @@ h2 {
 }
 
 .reveal-lift {
-  transform: translateY(60px) scale(0.97);
+  transform: translateY(86px) scale(0.955);
 }
 
 .reveal-soft {
-  transform: translateY(44px) scale(0.99);
+  transform: translateY(58px) scale(0.985);
+}
+
+.reveal-panel {
+  transform-origin: center bottom;
 }
 
 @keyframes headline-land {
@@ -629,6 +629,12 @@ h2 {
   .quote-card {
     border-left: 0;
     border-top: 1px solid var(--border-soft);
+  }
+
+  .story-section,
+  .media-card,
+  .statement-section {
+    min-height: auto;
   }
 }
 

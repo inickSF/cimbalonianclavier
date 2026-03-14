@@ -15,13 +15,15 @@ const servicePoints = [
 const instrumentCards = [
   {
     title: "Harpsichord",
-    copy: "For concert programmes, continuo work, recordings, and historic interiors.",
+    copy:
+      "For concert programmes, continuo work, recordings, and historic interiors where presence, character, and practical preparation matter equally.",
     image: harpsichordImage,
     imageClassName: "media-image media-image-harpsichord"
   },
   {
     title: "Fortepiano",
-    copy: "For salon recitals, intimate cultural events, and historically informed performance.",
+    copy:
+      "For salon recitals, intimate cultural events, and historically informed performance shaped around clarity, refinement, and room atmosphere.",
     image: fortepianoImage,
     imageClassName: "media-image media-image-fortepiano"
   }
@@ -68,11 +70,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      <Reveal>
+      <Reveal className="reveal-panel">
         <section className="story-section">
           <div className="story-heading">
             <p className="eyebrow">What We Primarily Do</p>
             <h2>We take care of the logistics so the music can arrive with ease.</h2>
+            <p className="story-intro">
+              Each engagement begins with a practical conversation and develops into a clear, calm
+              plan for delivery, placement, timing, and performance readiness.
+            </p>
           </div>
           <div className="story-points">
             {servicePoints.map((item, index) => (
@@ -89,7 +95,7 @@ export default function HomePage() {
 
       <section className="media-band">
         {instrumentCards.map((card, index) => (
-          <Reveal key={card.title} delay={index * 120} className="reveal-lift">
+          <Reveal key={card.title} delay={index * 120} className="reveal-panel reveal-lift">
             <article className="media-card">
               <div className="media-card-image">
                 <Image
@@ -109,17 +115,18 @@ export default function HomePage() {
         ))}
       </section>
 
-      <Reveal className="reveal-soft">
+      <Reveal className="reveal-panel reveal-soft">
         <section className="statement-section">
           <div className="statement-copy">
             <p className="eyebrow">Regional Service</p>
             <h2>Greece first, with selected work across Italy, Bulgaria, Hungary, Austria, Germany, and France.</h2>
+            <p className="statement-support">
+              The service is rooted in Greece and can extend where the event, repertoire, and
+              logistics make the collaboration worthwhile.
+            </p>
           </div>
           <div className="statement-quote">
-            <p>
-              <span className="ornate-word">Quiet</span> logistics. Refined presentation. Instruments
-              ready for performance.
-            </p>
+            <p>Quiet logistics. Refined presentation. Instruments ready for performance.</p>
           </div>
         </section>
       </Reveal>
