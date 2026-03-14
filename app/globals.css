@@ -482,27 +482,39 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-.feature-grid,
+.feature-list,
 .instrument-list,
 .contact-grid {
   display: grid;
   gap: 1rem;
 }
 
-.feature-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.feature-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 1.25rem;
 }
 
-.feature-card {
-  padding: 1.5rem;
-  border: 1px solid var(--border);
-  border-radius: 1.2rem;
-  background: rgba(255, 255, 255, 0.02);
+.feature-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 1rem;
+  padding: 0.35rem 0;
+}
+
+.feature-item p {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(1.2rem, 2.2vw, 1.65rem);
+  line-height: 1.65;
 }
 
 .feature-index {
   color: var(--accent);
-  font-size: 1.5rem;
+  font-size: 2rem;
+  line-height: 1.2;
 }
 
 .split-section {
@@ -569,7 +581,6 @@ h2 {
   }
 
   .split-section,
-  .feature-grid,
   .instrument-list,
   .contact-grid,
   .two-column-text {

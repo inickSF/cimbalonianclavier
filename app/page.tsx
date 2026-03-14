@@ -76,14 +76,14 @@ export default function HomePage() {
           <p className="eyebrow">What We Primarily Do</p>
           <h2>We take care of the logistics from the first call to the first measure.</h2>
         </div>
-        <div className="feature-grid">
+        <ul className="feature-list">
           {highlights.map((item) => (
-            <article key={item} className="feature-card">
+            <li key={item} className="feature-item">
               <span className="feature-index">•</span>
               <p>{item}</p>
-            </article>
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
 
       <section className="split-section">
