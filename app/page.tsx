@@ -30,12 +30,41 @@ export default function HomePage() {
             Greece, Italy, Bulgaria, Hungary, Austria, Germany, and France with a calm, luxurious
             service shaped for festivals, recordings, and intimate salons.
           </p>
+          <div className="hero-instrument-strip">
+            <article className="hero-instrument-card">
+              <div className="hero-instrument-image">
+                <Image
+                  src="/harpsichord-placeholder.svg"
+                  alt="Harpsichord placeholder"
+                  fill
+                  className="hero-thumbnail"
+                  sizes="(max-width: 900px) 100vw, 300px"
+                />
+              </div>
+              <div className="hero-instrument-meta">
+                <p>Harpsichord</p>
+                <span>Placeholder image until final photography</span>
+              </div>
+            </article>
+            <article className="hero-instrument-card">
+              <div className="hero-instrument-image">
+                <Image
+                  src="/fortepiano-placeholder.svg"
+                  alt="Fortepiano placeholder"
+                  fill
+                  className="hero-thumbnail"
+                  sizes="(max-width: 900px) 100vw, 300px"
+                />
+              </div>
+              <div className="hero-instrument-meta">
+                <p>Fortepiano</p>
+                <span>Placeholder image until final photography</span>
+              </div>
+            </article>
+          </div>
           <div className="hero-actions">
-            <Link href="/instruments" className="button button-primary">
-              View Instruments
-            </Link>
-            <Link href="/contact" className="button button-secondary">
-              Request Availability
+            <Link href="/contact" className="button button-primary">
+              Check Availability
             </Link>
           </div>
         </div>

@@ -1,0 +1,39 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="36" fill="#120F0D"/>
+  <rect x="24" y="24" width="1152" height="712" rx="28" stroke="#6C5326" stroke-opacity="0.55"/>
+  <path d="M118 552C118 525.49 139.49 504 166 504H870C954.366 504 1035.35 537.511 1095 597.15L1116 618H166C139.49 618 118 596.51 118 570V552Z" fill="url(#paint0_linear)"/>
+  <path d="M184 496H839C923.366 496 1004.35 529.511 1064 589.15L1095 620H184V496Z" fill="#171312"/>
+  <path d="M250 478H792C862.622 478 930.962 503.173 984.705 549.026L1084 633H250V478Z" fill="url(#paint1_linear)"/>
+  <rect x="230" y="520" width="466" height="34" rx="8" fill="#EFE4CF"/>
+  <rect x="248" y="520" width="28" height="92" rx="5" fill="#F8F0E1"/>
+  <rect x="287" y="520" width="28" height="92" rx="5" fill="#F8F0E1"/>
+  <rect x="326" y="520" width="28" height="92" rx="5" fill="#F8F0E1"/>
+  <rect x="365" y="520" width="28" height="92" rx="5" fill="#F8F0E1"/>
+  <rect x="404" y="520" width="28" height="92" rx="5" fill="#F8F0E1"/>
+  <rect x="443" y="520" width="28" height="92" rx="5" fill="#F8F0E1"/>
+  <rect x="482" y="520" width="28" height="92" rx="5" fill="#F8F0E1"/>
+  <rect x="521" y="520" width="28" height="92" rx="5" fill="#F8F0E1"/>
+  <rect x="560" y="520" width="28" height="92" rx="5" fill="#F8F0E1"/>
+  <rect x="599" y="520" width="28" height="92" rx="5" fill="#F8F0E1"/>
+  <rect x="638" y="520" width="28" height="92" rx="5" fill="#F8F0E1"/>
+  <rect x="277" y="520" width="20" height="58" rx="4" fill="#101010"/>
+  <rect x="355" y="520" width="20" height="58" rx="4" fill="#101010"/>
+  <rect x="394" y="520" width="20" height="58" rx="4" fill="#101010"/>
+  <rect x="472" y="520" width="20" height="58" rx="4" fill="#101010"/>
+  <rect x="550" y="520" width="20" height="58" rx="4" fill="#101010"/>
+  <rect x="589" y="520" width="20" height="58" rx="4" fill="#101010"/>
+  <rect x="293" y="620" width="28" height="70" rx="8" fill="#6E4A2B"/>
+  <rect x="864" y="620" width="28" height="70" rx="8" fill="#6E4A2B"/>
+  <rect x="1033" y="620" width="28" height="70" rx="8" fill="#6E4A2B"/>
+  <text x="92" y="92" fill="#C7A86A" font-family="Georgia, serif" font-size="28" letter-spacing="4">FORTEPIANO</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="118" y1="504" x2="1116" y2="618" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#211714"/>
+      <stop offset="1" stop-color="#3B2B21"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="250" y1="478" x2="1084" y2="633" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4C2C1C"/>
+      <stop offset="1" stop-color="#8A623A"/>
+    </linearGradient>
+  </defs>
+</svg>
