@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import heroKeyboard from "../Images/full_keybord_front.png";
 
 const highlights = [
   "Concert-ready rental instruments with discreet on-site presence",
@@ -11,33 +13,14 @@ export default function HomePage() {
     <div className="page">
       <section className="hero-panel">
         <div className="hero-scene" aria-hidden="true">
-          <div className="hero-wood hero-wood-top" />
-          <div className="hero-medallion">Cimbalonian Clavier</div>
-          <div className="hero-keys">
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-          </div>
-          <div className="hero-black-keys">
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-          </div>
-          <div className="hero-wood hero-wood-bottom" />
+          <Image
+            src={heroKeyboard}
+            alt=""
+            fill
+            priority
+            className="hero-image"
+            sizes="(max-width: 900px) 100vw, 1180px"
+          />
         </div>
         <div className="hero-content">
           <p className="eyebrow">Early Keyboard Instrument Rental in Greece & Southern Europe</p>
