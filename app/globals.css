@@ -357,7 +357,7 @@ h2 {
 .story-section-image {
   object-fit: cover;
   object-position: center 54%;
-  filter: saturate(0.78) brightness(0.42) contrast(0.94);
+  filter: saturate(0.84) brightness(0.58) contrast(0.95);
   transform: scale(1.04);
 }
 
@@ -366,8 +366,8 @@ h2 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(7, 7, 7, 0.38), rgba(7, 7, 7, 0.72)),
-    linear-gradient(90deg, rgba(7, 7, 7, 0.78) 0%, rgba(7, 7, 7, 0.46) 42%, rgba(7, 7, 7, 0.7) 100%);
+    linear-gradient(180deg, rgba(7, 7, 7, 0.26), rgba(7, 7, 7, 0.6)),
+    linear-gradient(90deg, rgba(7, 7, 7, 0.68) 0%, rgba(7, 7, 7, 0.36) 42%, rgba(7, 7, 7, 0.6) 100%);
 }
 
 .story-heading {
@@ -442,7 +442,7 @@ h2 {
 .media-image {
   object-fit: cover;
   object-position: center 58%;
-  filter: saturate(0.82) brightness(0.7);
+  filter: none;
 }
 
 .media-image-harpsichord {
@@ -457,9 +457,7 @@ h2 {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.48)),
-    linear-gradient(90deg, rgba(209, 169, 104, 0.08), transparent 45%);
+  background: none;
 }
 
 .media-card-copy {
@@ -586,16 +584,35 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 24px 50px rgba(0, 0, 0, 0.32);
   background: rgba(255, 255, 255, 0.04);
+  transition: transform 260ms ease, box-shadow 260ms ease, border-color 260ms ease;
 }
 
 .statement-quote-card-back {
   inset: 0 2.5rem 3.5rem 0;
   transform: rotate(-6deg);
+  transform-origin: center center;
 }
 
 .statement-quote-card-front {
   inset: 3.25rem 0 0 2.75rem;
   transform: rotate(5deg);
+  transform-origin: center center;
+}
+
+.statement-quote-card-back:hover,
+.statement-quote-card-back:focus-within {
+  transform: rotate(-6deg) scale(1.06);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.38);
+  border-color: rgba(255, 255, 255, 0.18);
+  z-index: 3;
+}
+
+.statement-quote-card-front:hover,
+.statement-quote-card-front:focus-within {
+  transform: rotate(5deg) scale(1.06);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.18);
+  z-index: 4;
 }
 
 .statement-quote-image {
