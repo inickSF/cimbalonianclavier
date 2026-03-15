@@ -3,10 +3,11 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import { AnimatedHeadline } from "../components/animated-headline";
 import { Reveal } from "../components/reveal";
+import coastalStepsImage from "../Images/Crossfade Locations/pexels-amy-burry-1766858-3354763.jpg";
 import athensCoastImage from "../Images/Crossfade Locations/pexels-deuspix-3741463.jpg";
 import grandCanalImage from "../Images/Crossfade Locations/pexels-jcosta-13692240.jpg";
 import eveningPiazzaImage from "../Images/Crossfade Locations/pexels-julia-khalimova-826746-3649184.jpg";
-import florenceCrossfadeImage from "../Images/Crossfade Locations/Florence_full.jpg";
+import cliffVillageImage from "../Images/Crossfade Locations/pexels-kaip-998704.jpg";
 import mediterraneanVillageImage from "../Images/Crossfade Locations/pexels-nicola-s-perondi-104802-3954641.jpg";
 import mountainVillageImage from "../Images/Crossfade Locations/pexels-pixabay-37079.jpg";
 import parthenonCrossfadeImage from "../Images/Crossfade Locations/Parthenon_full.jpg";
@@ -41,9 +42,10 @@ const instrumentCards = [
 
 const locationImages = [
   parthenonCrossfadeImage,
-  florenceCrossfadeImage,
+  coastalStepsImage,
   grandCanalImage,
   eveningPiazzaImage,
+  cliffVillageImage,
   mediterraneanVillageImage,
   athensCoastImage,
   warmFacadeImage,
