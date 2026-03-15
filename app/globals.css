@@ -190,7 +190,7 @@ h2,
 .hero-screen-image {
   object-fit: cover;
   object-position: center 60%;
-  filter: saturate(0.8) brightness(0.45) contrast(0.92);
+  filter: saturate(0.86) brightness(0.62) contrast(0.95);
   transform: scale(1.04);
 }
 
@@ -199,8 +199,8 @@ h2,
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(6, 6, 6, 0.3) 0%, rgba(6, 6, 6, 0.46) 40%, rgba(6, 6, 6, 0.86) 100%),
-    linear-gradient(90deg, rgba(6, 6, 6, 0.76) 0%, rgba(6, 6, 6, 0.5) 42%, rgba(6, 6, 6, 0.7) 100%);
+    linear-gradient(180deg, rgba(6, 6, 6, 0.18) 0%, rgba(6, 6, 6, 0.34) 40%, rgba(6, 6, 6, 0.7) 100%),
+    linear-gradient(90deg, rgba(6, 6, 6, 0.62) 0%, rgba(6, 6, 6, 0.34) 42%, rgba(6, 6, 6, 0.56) 100%);
 }
 
 .hero-screen-inner {
@@ -357,7 +357,7 @@ h2 {
 .story-section-image {
   object-fit: cover;
   object-position: center 54%;
-  filter: saturate(0.84) brightness(0.58) contrast(0.95);
+  filter: saturate(0.9) brightness(0.74) contrast(0.97);
   transform: scale(1.04);
 }
 
@@ -366,8 +366,8 @@ h2 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(7, 7, 7, 0.26), rgba(7, 7, 7, 0.6)),
-    linear-gradient(90deg, rgba(7, 7, 7, 0.68) 0%, rgba(7, 7, 7, 0.36) 42%, rgba(7, 7, 7, 0.6) 100%);
+    linear-gradient(180deg, rgba(7, 7, 7, 0.14), rgba(7, 7, 7, 0.4)),
+    linear-gradient(90deg, rgba(7, 7, 7, 0.52) 0%, rgba(7, 7, 7, 0.2) 42%, rgba(7, 7, 7, 0.42) 100%);
 }
 
 .story-heading {
@@ -517,7 +517,7 @@ h2 {
 .statement-copy-image {
   object-fit: cover;
   object-position: center center;
-  filter: saturate(0.84) brightness(0.56) contrast(0.95);
+  filter: saturate(0.88) brightness(0.7) contrast(0.96);
   transform: scale(1.03) translate3d(0, 0, 0);
   animation: statementDrift 14s ease-in-out infinite alternate;
   will-change: transform;
@@ -528,8 +528,8 @@ h2 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(8, 8, 8, 0.24), rgba(8, 8, 8, 0.62)),
-    linear-gradient(90deg, rgba(8, 8, 8, 0.6), rgba(8, 8, 8, 0.2) 48%, rgba(8, 8, 8, 0.56));
+    linear-gradient(180deg, rgba(8, 8, 8, 0.12), rgba(8, 8, 8, 0.42)),
+    linear-gradient(90deg, rgba(8, 8, 8, 0.48), rgba(8, 8, 8, 0.12) 48%, rgba(8, 8, 8, 0.42));
 }
 
 @keyframes statementCrossfade {
