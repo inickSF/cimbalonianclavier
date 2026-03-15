@@ -3,6 +3,7 @@ import Link from "next/link";
 import { AnimatedHeadline } from "../components/animated-headline";
 import { Reveal } from "../components/reveal";
 import fortepianoImage from "../Images/Fortepiano_full.png";
+import florenceImage from "../Images/Florence_full.jpg";
 import harpsichordImage from "../Images/Harpsichord_full.jpeg";
 import parthenonImage from "../Images/Parthenon_full.jpg";
 import heroKeyboard from "../Images/full_keybord_front.png";
@@ -120,13 +121,24 @@ export default function HomePage() {
         <section className="statement-section">
           <div className="statement-copy">
             <div className="statement-copy-media" aria-hidden="true">
-              <Image
-                src={parthenonImage}
-                alt=""
-                fill
-                className="statement-copy-image"
-                sizes="(max-width: 980px) 100vw, 50vw"
-              />
+              <div className="statement-copy-image-layer statement-copy-image-layer-primary">
+                <Image
+                  src={parthenonImage}
+                  alt=""
+                  fill
+                  className="statement-copy-image"
+                  sizes="(max-width: 980px) 100vw, 50vw"
+                />
+              </div>
+              <div className="statement-copy-image-layer statement-copy-image-layer-secondary">
+                <Image
+                  src={florenceImage}
+                  alt=""
+                  fill
+                  className="statement-copy-image"
+                  sizes="(max-width: 980px) 100vw, 50vw"
+                />
+              </div>
             </div>
             <p className="eyebrow">Regional Service</p>
             <h2>Greece first, with selected work across Italy, Bulgaria, Hungary, Austria, Germany, and France.</h2>
