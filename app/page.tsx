@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import { AnimatedHeadline } from "../components/animated-headline";
 import { Reveal } from "../components/reveal";
+import concertHallHarpsichordImage from "../Images/ConcertHall_Harpsichord.png";
 import coastalStepsImage from "../Images/Crossfade Locations/pexels-amy-burry-1766858-3354763.jpg";
 import athensCoastImage from "../Images/Crossfade Locations/pexels-deuspix-3741463.jpg";
 import grandCanalImage from "../Images/Crossfade Locations/pexels-jcosta-13692240.jpg";
@@ -10,6 +11,8 @@ import eveningPiazzaImage from "../Images/Crossfade Locations/pexels-julia-khali
 import cliffVillageImage from "../Images/Crossfade Locations/pexels-kaip-998704.jpg";
 import mediterraneanVillageImage from "../Images/Crossfade Locations/pexels-nicola-s-perondi-104802-3954641.jpg";
 import mountainVillageImage from "../Images/Crossfade Locations/pexels-pixabay-37079.jpg";
+import moverImageOne from "../Images/Movers/ChatGPT Image Mar 16, 2026, 01_13_09 AM.png";
+import moverImageTwo from "../Images/Movers/ChatGPT Image Mar 16, 2026, 01_13_13 AM.png";
 import parthenonCrossfadeImage from "../Images/Crossfade Locations/Parthenon_full.jpg";
 import riversideCityImage from "../Images/Crossfade Locations/pexels-pixabay-60027.jpg";
 import warmFacadeImage from "../Images/Crossfade Locations/pexels-seven11nash-624363.jpg";
@@ -99,6 +102,15 @@ export default function HomePage() {
 
       <Reveal className="reveal-panel">
         <section className="story-section">
+          <div className="story-section-media" aria-hidden="true">
+            <Image
+              src={concertHallHarpsichordImage}
+              alt=""
+              fill
+              className="story-section-image"
+              sizes="100vw"
+            />
+          </div>
           <div className="story-heading">
             <p className="eyebrow">What We Primarily Do</p>
             <h2>We take care of the logistics so the music can arrive with ease.</h2>
@@ -175,6 +187,26 @@ export default function HomePage() {
             </p>
           </div>
           <div className="statement-quote">
+            <div className="statement-quote-stack" aria-hidden="true">
+              <div className="statement-quote-card statement-quote-card-back">
+                <Image
+                  src={moverImageOne}
+                  alt=""
+                  fill
+                  className="statement-quote-image"
+                  sizes="(max-width: 980px) 100vw, 33vw"
+                />
+              </div>
+              <div className="statement-quote-card statement-quote-card-front">
+                <Image
+                  src={moverImageTwo}
+                  alt=""
+                  fill
+                  className="statement-quote-image"
+                  sizes="(max-width: 980px) 100vw, 33vw"
+                />
+              </div>
+            </div>
             <p>Quiet logistics. Refined presentation. Instruments ready for performance.</p>
           </div>
         </section>
