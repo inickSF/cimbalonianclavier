@@ -81,7 +81,7 @@ export default function HomePage() {
           </div>
           <div className="hero-center">
             <p className="eyebrow">Early Keyboard Instrument Rental</p>
-            <AnimatedHeadline text="Historically informed instruments, handled with modern calm." />
+            <AnimatedHeadline text="Harpsichord and fortepiano service shaped by Baroque elegance and refined care." />
             <p className="lead">
               Cimbalonian Clavier provides harpsichord and fortepiano rental for festivals,
               recordings, concerts, and private salons, with Greece at the centre of its service.
