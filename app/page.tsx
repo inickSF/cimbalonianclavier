@@ -1,11 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import { AnimatedHeadline } from "../components/animated-headline";
 import { Reveal } from "../components/reveal";
+import athensCoastImage from "../Images/Crossfade Locations/pexels-deuspix-3741463.jpg";
+import grandCanalImage from "../Images/Crossfade Locations/pexels-jcosta-13692240.jpg";
+import eveningPiazzaImage from "../Images/Crossfade Locations/pexels-julia-khalimova-826746-3649184.jpg";
+import florenceCrossfadeImage from "../Images/Crossfade Locations/Florence_full.jpg";
+import mediterraneanVillageImage from "../Images/Crossfade Locations/pexels-nicola-s-perondi-104802-3954641.jpg";
+import mountainVillageImage from "../Images/Crossfade Locations/pexels-pixabay-37079.jpg";
+import parthenonCrossfadeImage from "../Images/Crossfade Locations/Parthenon_full.jpg";
+import riversideCityImage from "../Images/Crossfade Locations/pexels-pixabay-60027.jpg";
+import warmFacadeImage from "../Images/Crossfade Locations/pexels-seven11nash-624363.jpg";
 import fortepianoImage from "../Images/Fortepiano_full.png";
-import florenceImage from "../Images/Florence_full.jpg";
 import harpsichordImage from "../Images/Harpsichord_full.jpeg";
-import parthenonImage from "../Images/Parthenon_full.jpg";
 import heroKeyboard from "../Images/full_keybord_front.png";
 
 const servicePoints = [
@@ -30,6 +38,21 @@ const instrumentCards = [
     imageClassName: "media-image media-image-fortepiano"
   }
 ];
+
+const locationImages = [
+  parthenonCrossfadeImage,
+  florenceCrossfadeImage,
+  grandCanalImage,
+  eveningPiazzaImage,
+  mediterraneanVillageImage,
+  athensCoastImage,
+  warmFacadeImage,
+  mountainVillageImage,
+  riversideCityImage
+];
+
+const crossfadeSlotSeconds = 4;
+const crossfadeDurationSeconds = locationImages.length * crossfadeSlotSeconds;
 
 export default function HomePage() {
   return (
@@ -121,24 +144,26 @@ export default function HomePage() {
         <section className="statement-section">
           <div className="statement-copy">
             <div className="statement-copy-media" aria-hidden="true">
-              <div className="statement-copy-image-layer statement-copy-image-layer-primary">
-                <Image
-                  src={parthenonImage}
-                  alt=""
-                  fill
-                  className="statement-copy-image"
-                  sizes="(max-width: 980px) 100vw, 50vw"
-                />
-              </div>
-              <div className="statement-copy-image-layer statement-copy-image-layer-secondary">
-                <Image
-                  src={florenceImage}
-                  alt=""
-                  fill
-                  className="statement-copy-image"
-                  sizes="(max-width: 980px) 100vw, 50vw"
-                />
-              </div>
+              {locationImages.map((image, index) => (
+                <div
+                  key={image.src}
+                  className="statement-copy-image-layer"
+                  style={
+                    {
+                      "--statement-delay": `-${index * crossfadeSlotSeconds}s`,
+                      "--statement-duration": `${crossfadeDurationSeconds}s`
+                    } as CSSProperties
+                  }
+                >
+                  <Image
+                    src={image}
+                    alt=""
+                    fill
+                    className="statement-copy-image"
+                    sizes="(max-width: 980px) 100vw, 50vw"
+                  />
+                </div>
+              ))}
             </div>
             <p className="eyebrow">Regional Service</p>
             <h2>Greece first, with selected work across Italy, Bulgaria, Hungary, Austria, Germany, and France.</h2>
