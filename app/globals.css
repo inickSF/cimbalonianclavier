@@ -231,7 +231,7 @@ h2,
 .hero-center {
   align-self: center;
   justify-self: center;
-  width: min(100%, 54rem);
+  width: min(100%, 60rem);
   text-align: center;
 }
 
@@ -254,6 +254,10 @@ h1 {
 
 .animated-headline {
   perspective: 1200px;
+}
+
+.hero-center .animated-headline {
+  font-size: clamp(2.75rem, 6.15vw, 5.15rem);
 }
 
 .headline-line {
@@ -347,6 +351,8 @@ h2 {
     "points";
   gap: 1.5rem;
   min-height: calc(100vh - 7rem);
+  align-content: start;
+  justify-items: start;
   align-items: start;
   overflow: hidden;
 }
