@@ -258,6 +258,7 @@ h1 {
 
 .headline-line {
   display: block;
+  white-space: nowrap;
 }
 
 .headline-word {
@@ -340,11 +341,11 @@ h2 {
 .story-section {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
   grid-template-areas:
-    "eyebrow eyebrow"
-    "heading points";
-  gap: 2rem;
+    "eyebrow"
+    "heading"
+    "points";
+  gap: 1.5rem;
   min-height: calc(100vh - 7rem);
   align-items: start;
   overflow: hidden;
@@ -387,6 +388,7 @@ h2 {
   display: grid;
   align-content: start;
   gap: 1rem;
+  max-width: 46rem;
 }
 
 .story-intro,
@@ -402,6 +404,7 @@ h2 {
   grid-area: points;
   display: grid;
   gap: 1rem;
+  max-width: 60rem;
 }
 
 .story-point {
@@ -829,6 +832,10 @@ h2 {
 @media (max-width: 640px) {
   .site-shell {
     width: min(calc(100% - 1rem), var(--max-width));
+  }
+
+  .headline-line {
+    white-space: normal;
   }
 
   .hero-screen-inner,
