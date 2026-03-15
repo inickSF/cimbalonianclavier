@@ -162,7 +162,7 @@ h2,
 .instrument-card,
 .contact-card {
   border: 1px solid var(--border);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.03));
   box-shadow: var(--shadow);
   border-radius: 1.75rem;
 }
@@ -190,7 +190,7 @@ h2,
 .hero-screen-image {
   object-fit: cover;
   object-position: center 60%;
-  filter: saturate(0.86) brightness(0.62) contrast(0.95);
+  filter: saturate(0.9) brightness(0.72) contrast(0.96);
   transform: scale(1.04);
 }
 
@@ -199,8 +199,8 @@ h2,
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(6, 6, 6, 0.18) 0%, rgba(6, 6, 6, 0.34) 40%, rgba(6, 6, 6, 0.7) 100%),
-    linear-gradient(90deg, rgba(6, 6, 6, 0.62) 0%, rgba(6, 6, 6, 0.34) 42%, rgba(6, 6, 6, 0.56) 100%);
+    linear-gradient(180deg, rgba(6, 6, 6, 0.1) 0%, rgba(6, 6, 6, 0.22) 40%, rgba(6, 6, 6, 0.5) 100%),
+    linear-gradient(90deg, rgba(6, 6, 6, 0.44) 0%, rgba(6, 6, 6, 0.18) 42%, rgba(6, 6, 6, 0.38) 100%);
 }
 
 .hero-screen-inner {
@@ -254,6 +254,10 @@ h1 {
 
 .animated-headline {
   perspective: 1200px;
+}
+
+.headline-line {
+  display: block;
 }
 
 .headline-word {
@@ -337,9 +341,12 @@ h2 {
   position: relative;
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  grid-template-areas:
+    "eyebrow eyebrow"
+    "heading points";
   gap: 2rem;
   min-height: calc(100vh - 7rem);
-  align-items: center;
+  align-items: start;
   overflow: hidden;
 }
 
@@ -357,7 +364,7 @@ h2 {
 .story-section-image {
   object-fit: cover;
   object-position: center 54%;
-  filter: saturate(0.9) brightness(0.74) contrast(0.97);
+  filter: saturate(0.93) brightness(0.84) contrast(0.98);
   transform: scale(1.04);
 }
 
@@ -366,11 +373,17 @@ h2 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(7, 7, 7, 0.14), rgba(7, 7, 7, 0.4)),
-    linear-gradient(90deg, rgba(7, 7, 7, 0.52) 0%, rgba(7, 7, 7, 0.2) 42%, rgba(7, 7, 7, 0.42) 100%);
+    linear-gradient(180deg, rgba(7, 7, 7, 0.06), rgba(7, 7, 7, 0.22)),
+    linear-gradient(90deg, rgba(7, 7, 7, 0.34) 0%, rgba(7, 7, 7, 0.08) 42%, rgba(7, 7, 7, 0.26) 100%);
+}
+
+.story-eyebrow {
+  grid-area: eyebrow;
+  margin-bottom: 0;
 }
 
 .story-heading {
+  grid-area: heading;
   display: grid;
   align-content: start;
   gap: 1rem;
@@ -386,6 +399,7 @@ h2 {
 }
 
 .story-points {
+  grid-area: points;
   display: grid;
   gap: 1rem;
 }
@@ -396,6 +410,7 @@ h2 {
   gap: 1rem;
   padding: 1.15rem 0;
   border-top: 1px solid var(--border-soft);
+  align-items: start;
 }
 
 .story-point:first-child {
@@ -517,7 +532,7 @@ h2 {
 .statement-copy-image {
   object-fit: cover;
   object-position: center center;
-  filter: saturate(0.88) brightness(0.7) contrast(0.96);
+  filter: saturate(0.92) brightness(0.82) contrast(0.98);
   transform: scale(1.03) translate3d(0, 0, 0);
   animation: statementDrift 14s ease-in-out infinite alternate;
   will-change: transform;
@@ -528,8 +543,8 @@ h2 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(8, 8, 8, 0.12), rgba(8, 8, 8, 0.42)),
-    linear-gradient(90deg, rgba(8, 8, 8, 0.48), rgba(8, 8, 8, 0.12) 48%, rgba(8, 8, 8, 0.42));
+    linear-gradient(180deg, rgba(8, 8, 8, 0.06), rgba(8, 8, 8, 0.24)),
+    linear-gradient(90deg, rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.06) 48%, rgba(8, 8, 8, 0.24));
 }
 
 @keyframes statementCrossfade {

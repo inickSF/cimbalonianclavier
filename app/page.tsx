@@ -21,9 +21,18 @@ import harpsichordImage from "../Images/Harpsichord_full.jpeg";
 import heroKeyboard from "../Images/full_keybord_front.png";
 
 const servicePoints = [
-  "From the first phone call, we shape the right instrument, timing, access, and concert requirements.",
-  "We manage transport, placement, setup, and practical coordination with calm attention to detail.",
-  "From arrival to the first measure, the instrument is prepared to feel natural, elegant, and assured."
+  {
+    numeral: "I",
+    copy: "From the first phone call, we shape the right instrument, timing, access, and concert requirements."
+  },
+  {
+    numeral: "II",
+    copy: "We manage transport, placement, setup, and practical coordination with calm attention to detail."
+  },
+  {
+    numeral: "III",
+    copy: "From arrival to the first measure, the instrument is prepared to feel natural, elegant, and assured."
+  }
 ];
 
 const instrumentCards = [
@@ -81,7 +90,9 @@ export default function HomePage() {
           </div>
           <div className="hero-center">
             <p className="eyebrow">Early Keyboard Instrument Rental</p>
-            <AnimatedHeadline text="Harpsichord and fortepiano service shaped by Baroque elegance and refined care." />
+            <AnimatedHeadline text={`Harpsichord and fortepiano service
+shaped by Baroque elegance
+and refined care.`} />
             <p className="lead">
               Cimbalonian Clavier provides harpsichord and fortepiano rental for festivals,
               recordings, concerts, and private salons, with Greece at the centre of its service.
@@ -111,8 +122,8 @@ export default function HomePage() {
               sizes="100vw"
             />
           </div>
+          <p className="eyebrow story-eyebrow">What We Primarily Do</p>
           <div className="story-heading">
-            <p className="eyebrow">What We Primarily Do</p>
             <h2>We take care of the logistics so the music can arrive with ease.</h2>
             <p className="story-intro">
               Each engagement begins with a practical conversation and develops into a clear, calm
@@ -121,10 +132,10 @@ export default function HomePage() {
           </div>
           <div className="story-points">
             {servicePoints.map((item, index) => (
-              <Reveal key={item} delay={index * 90}>
+              <Reveal key={item.numeral} delay={index * 90}>
                 <article className="story-point">
-                  <span className="story-number">0{index + 1}</span>
-                  <p>{item}</p>
+                  <span className="story-number">{item.numeral}</span>
+                  <p>{item.copy}</p>
                 </article>
               </Reveal>
             ))}
