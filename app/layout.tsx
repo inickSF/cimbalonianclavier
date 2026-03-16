@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 import Link from "next/link";
+import { SiteNav } from "../components/site-nav";
 import goldenLogo from "../Images/Golden_Logo_Trans.png";
 import "./globals.css";
 
@@ -61,13 +62,7 @@ export default function RootLayout({
                 className="site-logo-image"
               />
             </Link>
-            <nav className="site-nav" aria-label="Primary navigation">
-              {navigation.map((item) => (
-                <Link key={item.href} href={item.href}>
-                  {item.label}
-                </Link>
-              ))}
-            </nav>
+            <SiteNav items={navigation} />
           </header>
           <main>{children}</main>
           <footer className="site-footer">
