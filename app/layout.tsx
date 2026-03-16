@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 import Link from "next/link";
-import goldenLogo from "../Images/Golden_Logo.png";
+import goldenLogo from "../Images/Golden_Logo_Trans.png";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
