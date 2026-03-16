@@ -61,6 +61,7 @@ a {
 }
 
 .site-header {
+  flex-direction: column;
   align-items: center;
   padding: 0.85rem 0 1.25rem;
   border-bottom: 1px solid var(--border-soft);
@@ -74,13 +75,6 @@ a {
   border-top: 1px solid var(--border-soft);
 }
 
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.brand strong,
 h1,
 h2,
 .footer-title,
@@ -88,36 +82,22 @@ h2,
   font-family: var(--font-display), serif;
 }
 
-.brand strong,
 .footer-title {
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 
-.brand strong {
-  font-size: 1.08rem;
+.site-logo {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0.9rem;
 }
 
-.brand em {
-  display: block;
-  margin-top: 0.25rem;
-  color: var(--muted);
-  font-size: 0.95rem;
-  font-style: normal;
-}
-
-.brand-mark {
-  display: grid;
-  place-items: center;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 999px;
-  border: 1px solid rgba(209, 169, 104, 0.38);
-  background: rgba(255, 255, 255, 0.02);
-  color: var(--accent);
-  font-family: var(--font-display), serif;
-  font-size: 1.1rem;
+.site-logo-image {
+  width: min(100%, 18rem);
+  height: auto;
 }
 
 .site-nav {
