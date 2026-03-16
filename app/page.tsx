@@ -85,11 +85,6 @@ export default function HomePage() {
           />
         </div>
         <div className="hero-screen-inner">
-          <div className="hero-topline">
-            <span>Based primarily in Greece</span>
-            <span>Harpsichord & Fortepiano</span>
-            <span>Selected service across Southern Europe</span>
-          </div>
           <div className="hero-center">
             <p className="eyebrow">Early Keyboard Instrument Rental</p>
             <AnimatedHeadline text={`Harpsichord and fortepiano service
@@ -106,9 +101,11 @@ and refined care.`} />
             </div>
           </div>
           <div className="hero-bottomline">
-            <span>No upfront clutter</span>
-            <span>Logistics handled discreetly</span>
-            <span>Ready from first call to first measure</span>
+            <span>
+              Based primarily in Greece • Harpsichord & Fortepiano • Selected service across
+              Southern Europe • No upfront clutter • Logistics handled discreetly • Ready from
+              first call to first measure
+            </span>
           </div>
         </div>
       </section>
