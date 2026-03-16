@@ -9,6 +9,7 @@ import athensCoastImage from "../Images/Crossfade Locations/pexels-deuspix-37414
 import grandCanalImage from "../Images/Crossfade Locations/pexels-jcosta-13692240.jpg";
 import eveningPiazzaImage from "../Images/Crossfade Locations/pexels-julia-khalimova-826746-3649184.jpg";
 import cliffVillageImage from "../Images/Crossfade Locations/pexels-kaip-998704.jpg";
+import grandInteriorImage from "../Images/Crossfade Locations/pexels-magda-ehlers-pexels-734171.jpg";
 import mediterraneanVillageImage from "../Images/Crossfade Locations/pexels-nicola-s-perondi-104802-3954641.jpg";
 import mountainVillageImage from "../Images/Crossfade Locations/pexels-pixabay-37079.jpg";
 import moverImageOne from "../Images/Movers/ChatGPT Image Mar 16, 2026, 01_13_09 AM.png";
@@ -58,6 +59,7 @@ const locationImages = [
   grandCanalImage,
   eveningPiazzaImage,
   cliffVillageImage,
+  grandInteriorImage,
   mediterraneanVillageImage,
   athensCoastImage,
   warmFacadeImage,
