@@ -13,7 +13,7 @@ export default function ContactPage() {
       <section className="contact-grid">
         <article className="contact-card">
           <h2>Email</h2>
-          <p>hello@cimbalonianclavier.com</p>
+          <p>info@cimbalonianclavier.com</p>
         </article>
         <article className="contact-card">
           <h2>Location</h2>

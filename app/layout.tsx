@@ -72,7 +72,7 @@ export default function RootLayout({
             </div>
             <div>
               <p className="footer-title">Enquiries</p>
-              <p>hello@cimbalonianclavier.com</p>
+              <p>info@cimbalonianclavier.com</p>
               <p>Based in Greece, serving Italy, Bulgaria, Hungary, Austria, Germany, and France.</p>
             </div>
           </footer>
